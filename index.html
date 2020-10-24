@@ -15,9 +15,9 @@
         <li>If you get zero point you will lose your turn</li>
     </h4>
     Player 1:
-    <input type="text" placeholder="Enter Your Name" required id="name1">
+    <input type="text" placeholder="Enter Your Name" required id="name1" min="3">
     Player 2:
-    <input type="text" placeholder="Enter Your Name" required id="name2"><br>
+    <input type="text" placeholder="Enter Your Name" required id="name2" min="4"><br>
 
     <button type="button" class="btn btn-danger">PLAY NOW</button>
 
@@ -28,26 +28,27 @@
         
             <div>
             <p>Turn Points: <span id="p1-turn-points">0</span></p>
-            <p><img src="" id="p1-roll-img"></p>
+            <p><img src="./images/dice4.png" id="p1-roll-img"></p>
             <p><button id="p1-roll">Roll</button> <button id="p1-hold">Hold</button></p>
         </div>
-    </div></td>
+    </div>
+    </td>
 
     <td>
 
         <div id="p2-header">
-            Player 2 - Total Points: <span id="p2-points">100</span>
+            Player 2 - Total Points: <span id="p2-points">50</span>
         </div>
         
         <div>
             <p>Turn Points: <span id="p2-turn-points">0</span></p>
-            <p><img src=""></p>
+            <p><img src="./images/dice6.png"></p>
             <p><button id="p2-roll" disabled>Roll</button> <button id="p2-hold" disabled>Hold</button></p>
         </div>
     </td>
+
+
     </tr>
-
-
     </table>
 </body>
 </html>
