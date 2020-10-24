@@ -11,7 +11,7 @@
 
     <h4>Instruction</h4>
     <h4>
-        <li>You need to get 50points to win the Game</li>
+        <li>You need to get 50 points to win the Game</li>
         <li>If you get zero point you will lose your turn</li>
     </h4>
     Player 1:
@@ -23,16 +23,31 @@
 
     <table>
         <tr><td><div id="p1-header" class="active">
-            Player 1 - Total Points:<input type="name" id="name"> <span id="p1-points">100</span>
+            Player 1 - Total Points: <span id="p1-points">50</span>
             </div>
         
             <div>
             <p>Turn Points: <span id="p1-turn-points">0</span></p>
-            <p><img src="images/dice3.png" id="p1-roll-img"></p>
+            <p><img src="" id="p1-roll-img"></p>
             <p><button id="p1-roll">Roll</button> <button id="p1-hold">Hold</button></p>
         </div>
     </div></td>
+
+    <td>
+
+        <div id="p2-header">
+            Player 2 - Total Points: <span id="p2-points">100</span>
+        </div>
+        
+        <div>
+            <p>Turn Points: <span id="p2-turn-points">0</span></p>
+            <p><img src=""></p>
+            <p><button id="p2-roll" disabled>Roll</button> <button id="p2-hold" disabled>Hold</button></p>
+        </div>
+    </td>
     </tr>
+
+
     </table>
 </body>
 </html>
