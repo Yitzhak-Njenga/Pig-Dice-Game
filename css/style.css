@@ -11,3 +11,6 @@ h1,h4,li,#play,table{
 table{
     margin-left: 30%;
 }
+body{
+  background-image: url('../images/bg.jpg');
+}
