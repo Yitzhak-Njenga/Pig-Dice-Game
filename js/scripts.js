@@ -7,9 +7,13 @@ $(document).ready(function(){
     });
 });
 
+var player1={
+    totalpts:0,
+    turnPts:0,
+}
 
 document.getElementById("p1-roll").addEventListener("click",p1Roll);
-document.getElementById("p1-hold").addEventListener("click",p1hold);
+document.getElementById("p1-hold").addEventListener("click",p1Hold);
 
 
 function p1Roll(){
@@ -22,19 +26,27 @@ function p1Roll(){
     } 
 
 }
-function p1hold(){
+function p1Hold(){
     player1.totalpts += player1.turnPts;
     document.getElementById("p1-points").innerHTML = player1.totalpts;
 
    if(player1.totalpts >=50){
-       alert("Player One " + "" + document.getElementById("name").value);
-   }else{
-
-    player1.turnPts = 0; 
-    document.getElementById("p1-turn-points").innerHTML = 0;
-
-
-    switchTurn();
+       alert("Player One " + "" + document.getElementById("name1").value);
    }
+}
+
+
+
+
+
+function switchTurn(){
+    document.getElementById("p1-turn-points").innerHTML =player1.turnPts;
+    document.getElementById("p1-header").classList.remove("active");
+    document.getElementById("p2-header").classList.add("active");
+    document.getElementById("p1-roll").disabled = true;
+    document.getElementById("p1-hold").disabled = true;
+    document.getElementById("p2-roll").disabled = false;
+    document.getElementById("p2-hold").disabled = false;
+
 }
  
