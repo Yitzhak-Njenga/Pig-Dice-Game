@@ -14,3 +14,9 @@ table{
 body{
   background-image: url('../images/bg.jpg');
 }
+
+table,tr,td{
+    border:1px dashed blue;
+    padding: 20px;
+    background-color: #cfd1dc26
+}
