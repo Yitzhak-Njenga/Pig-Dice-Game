@@ -15,6 +15,9 @@
 * JQuury
 * Javascript
 
+## Live Link
+### https://yitzhak-njenga.github.io/Pig-Dice-Game/
+
 ## Author
 ### Yitzhak Njenga
 
