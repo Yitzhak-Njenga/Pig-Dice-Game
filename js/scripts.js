@@ -23,7 +23,10 @@ function p1Roll(){
     if(rollNum !=1 ){
         player1.turnPts += rollNum;
         document.getElementById("p1-turn-points").innerHTML =player1.turnPts;
-    } 
+    }else{
+        player1.totalpts <= 0;
+        alert( document.getElementById("name1").value + " " + "Lose");
+    }
 
 }
 function p1Hold(){
@@ -31,10 +34,16 @@ function p1Hold(){
     document.getElementById("p1-points").innerHTML = player1.totalpts;
 
    if(player1.totalpts >=50){
-       alert("Player One " + "" + document.getElementById("name1").value);
+       alert( document.getElementById("name1").value + " " + "Wins");
+   }else{
+
+    player1.turnPts = 0; 
+    document.getElementById("p1-turn-points").innerHTML = 0;
+
+
+    switchTurn();
    }
 }
-
 
 
 
