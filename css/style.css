@@ -10,6 +10,7 @@ h1,h4,li,#play,table{
 }
 table{
     margin-left: 30%;
+    display: none;
 }
 body{
   background-image: url('../images/bg.jpg');
@@ -20,3 +21,9 @@ table,tr,td{
     padding: 20px;
     background-color: #cfd1dc26
 }
+#play{
+    margin-top: 20px;
+    margin-left: 45%;
+    margin-bottom: 10px;
+}
+
