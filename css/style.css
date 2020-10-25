@@ -32,3 +32,15 @@ table,tr,td{
     margin-bottom: 10px;
 }
 
+.active {
+    background: rgb(203,208,231);
+    background: linear-gradient(90deg, rgba(203,208,231,1) 10%, rgba(252,70,107,1) 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.class>img{
+    margin-right: 10%;
+}
+

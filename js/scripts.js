@@ -9,6 +9,7 @@ $(document).ready(function(){
 
 
 document.getElementById("p1-roll").addEventListener("click",p1Roll);
+document.getElementById("p1-hold").addEventListener("click",p1hold);
 
 
 function p1Roll(){
@@ -21,3 +22,19 @@ function p1Roll(){
     } 
 
 }
+function p1hold(){
+    player1.totalpts += player1.turnPts;
+    document.getElementById("p1-points").innerHTML = player1.totalpts;
+
+   if(player1.totalpts >=50){
+       alert("Player One " + "" + document.getElementById("name").value);
+   }else{
+
+    player1.turnPts = 0; 
+    document.getElementById("p1-turn-points").innerHTML = 0;
+
+
+    switchTurn();
+   }
+}
+ 
