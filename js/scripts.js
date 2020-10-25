@@ -25,7 +25,9 @@ function p1Roll(){
         document.getElementById("p1-turn-points").innerHTML =player1.turnPts;
     }else{
         player1.totalpts <= 0;
-        alert( document.getElementById("name1").value + " " + "Lose");
+
+    switchTurn();
+       
     }
 
 }
@@ -35,6 +37,7 @@ function p1Hold(){
 
    if(player1.totalpts >=50){
        alert( document.getElementById("name1").value + " " + "Wins");
+       
    }else{
 
     player1.turnPts = 0; 
